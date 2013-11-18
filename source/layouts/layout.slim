@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    / Use title if it's in the page YAML frontmatter
+    title= current_page.data.title || ""
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    = stylesheet_link_tag "main", media: "all"
+
+  body class=page_classes
+    = yield
+
+    /! JavaScript
+    script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+    = javascript_include_tag "main"
