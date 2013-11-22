@@ -54,6 +54,11 @@ set :images_dir, 'img'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
+  compass_config do |config|
+    config.output_style = :expanded
+    config.line_comments = false
+  end
+
   # activate :minify_css
 
   # Minify Javascript on build
