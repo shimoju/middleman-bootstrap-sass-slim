@@ -51,6 +51,9 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
+# Configure Slim
+Slim::Engine.set_default_options pretty: true, sort_attrs: false
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -72,4 +75,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # Minify HTML on build
+  # Slim::Engine.set_default_options pretty: false
 end
