@@ -1,5 +1,5 @@
 doctype html
-html
+html lang="en"
   head
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
@@ -11,7 +11,21 @@ html
     = stylesheet_link_tag "main", media: "all"
 
   body class=page_classes
-    = yield
+    nav role="navigation"
+
+    header role="banner"
+      h1= current_page.data.title
+      p= link_to "Read Online Documentation", "http://middlemanapp.com/"
+
+    .wrap
+      main role="main"
+        section
+          = yield
+
+      aside role="complementary"
+
+    footer role="contentinfo"
+      small &copy;
 
     /! JavaScript
     script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"
