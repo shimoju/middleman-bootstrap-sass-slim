@@ -27,18 +27,21 @@ html lang="en"
             li= link_to "Contact", "#contact"
 
     header role="banner"
-      h1= current_page.data.title
-      p= link_to "Read Online Documentation", "http://middlemanapp.com/"
+      .container
+        h1= current_page.data.title
+        p= link_to "Read Online Documentation", "http://middlemanapp.com/"
 
     .wrap
-      main role="main"
-        section
-          = yield
+      .container
+        main role="main"
+          section
+            = yield
 
-      aside role="complementary"
+        aside role="complementary"
 
     footer role="contentinfo"
-      small &copy;
+      .container
+        small &copy;
 
     /! JavaScript
     script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"
