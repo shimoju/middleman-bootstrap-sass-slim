@@ -11,7 +11,20 @@ html lang="en"
     = stylesheet_link_tag "main", media: "all"
 
   body class=page_classes
-    nav role="navigation"
+    nav.navbar.navbar-inverse.navbar-static-top role="navigation"
+      .container
+        .navbar-header
+          button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-collapse"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to "Middleman", ".", class: "navbar-brand"
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active= link_to "Home", "#"
+            li= link_to "About", "#about"
+            li= link_to "Contact", "#contact"
 
     header role="banner"
       h1= current_page.data.title
