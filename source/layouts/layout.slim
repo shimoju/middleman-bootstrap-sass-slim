@@ -42,6 +42,10 @@ html lang="en"
 
           .col-sm-3
             aside role="complementary"
+              nav.list-group role="navigation"
+                = link_to "Home", "#", class: "list-group-item active"
+                = link_to "About", "#about", class: "list-group-item"
+                = link_to "Contact", "#contact", class: "list-group-item"
 
     footer role="contentinfo"
       .container
