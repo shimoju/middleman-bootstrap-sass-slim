@@ -34,11 +34,14 @@ html lang="en"
 
     .wrap
       .container
-        main role="main"
-          section
-            = yield
+        .row
+          .col-sm-9
+            main role="main"
+              section
+                = yield
 
-        aside role="complementary"
+          .col-sm-3
+            aside role="complementary"
 
     footer role="contentinfo"
       .container
