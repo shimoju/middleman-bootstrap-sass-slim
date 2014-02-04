@@ -80,3 +80,21 @@ configure :build do
   # Minify HTML on build
   # Slim::Engine.set_default_options pretty: false
 end
+
+# middleman-deploy configuration
+activate :deploy do |deploy|
+  # Automatically run `middleman build` during `middleman deploy`
+  # deploy.build_before = true
+
+  # rsync, ftp, sftp, or git
+  deploy.method = :git
+
+  # remote name or git url, default: origin
+  # deploy.remote   = 'custom-remote'
+
+  # default: gh-pages
+  # deploy.branch   = 'master'
+
+  # commit strategy: can be :force_push or :submodule, default: :force_push
+  # deploy.strategy = :submodule
+end
