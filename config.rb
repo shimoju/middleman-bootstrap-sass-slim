@@ -24,7 +24,7 @@
 #   page "/admin/*"
 # end
 
-# Proxy pages (http://middlemanapp.com/dynamic-pages/)
+# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
@@ -36,7 +36,9 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-activate :livereload
+# configure :development do
+#   activate :livereload
+# end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -51,8 +53,13 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
-# Configure Slim
-Slim::Engine.set_default_options pretty: true, sort_attrs: false
+# development configuration
+configure :development do
+  activate :livereload
+
+  # Configure Slim
+  Slim::Engine.set_default_options pretty: true, sort_attrs: false
+end
 
 # Build-specific configuration
 configure :build do
@@ -76,9 +83,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
-  # Minify HTML on build
-  # Slim::Engine.set_default_options pretty: false
 end
 
 # middleman-deploy configuration
