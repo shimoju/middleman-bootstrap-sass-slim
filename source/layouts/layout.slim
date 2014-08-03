@@ -8,7 +8,7 @@ html lang="en"
     meta name="description" content=""
     meta name="viewport" content="width=device-width, initial-scale=1"
 
-    = stylesheet_link_tag "main"
+    = stylesheet_link_tag "main", type: false
 
   body class=page_classes
     nav.navbar.navbar-inverse.navbar-static-top role="navigation"
@@ -52,7 +52,7 @@ html lang="en"
         small &copy;
 
     /! JavaScript
-    = javascript_include_tag "main"
+    = javascript_include_tag "main", type: false
 
     / Google Analytics: change UA-XXXXX-X to be your site's ID.
     / javascript:
