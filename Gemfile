@@ -13,7 +13,9 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
+# Slim template engine
 gem 'slim', '~> 2.0.3'
-gem 'bootstrap-sass', '~> 3.2.0', require: false
 
+# Assets
+gem 'bootstrap-sass', '~> 3.2.0', require: false
 gem 'rails-assets-jquery', require: false
