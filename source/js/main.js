@@ -1,3 +1,5 @@
+//= require jquery
+
 // Load all Bootstrap JavaScripts
 //= require bootstrap
 

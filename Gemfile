@@ -15,3 +15,5 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 gem 'slim', '~> 2.0.3'
 gem 'bootstrap-sass', '~> 3.2.0'
+
+gem 'rails-assets-jquery', require: false
