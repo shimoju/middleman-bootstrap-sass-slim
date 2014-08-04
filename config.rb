@@ -69,10 +69,9 @@ configure :build do
     config.line_comments = false
   end
 
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
+  # Minify on build
+  activate :minify_css
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
