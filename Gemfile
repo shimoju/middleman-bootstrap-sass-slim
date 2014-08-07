@@ -7,6 +7,8 @@ gem 'middleman', '~> 3.3.4'
 gem 'middleman-livereload', '~> 3.3.4'
 # Deploy plugin
 gem 'middleman-deploy', '~> 0.2.4'
+# Images compress plugin
+gem 'middleman-imageoptim', '~> 0.1.4'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]

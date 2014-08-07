@@ -74,6 +74,10 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 
+  # Compress images
+  # https://github.com/toy/image_optim#binaries-installation
+  # activate :imageoptim
+
   # Enable cache buster
   # activate :asset_hash
 
