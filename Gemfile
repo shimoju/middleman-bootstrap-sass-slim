@@ -16,7 +16,7 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 # Slim template engine
-gem 'slim', '~> 2.0.3'
+gem 'slim', '~> 2.1.0'
 
 # Assets
 gem 'bootstrap-sass', '~> 3.2.0', require: false
