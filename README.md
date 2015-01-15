@@ -9,7 +9,7 @@ git clone https://github.com/shimoju/middleman-bootstrap-sass-slim.git ~/.middle
 middleman init my_new_project --template=bootstrap-sass-slim
 ```
 
-## Licence
+## License
 
 [MIT](https://github.com/shimoju/middleman-bootstrap-sass-slim/blob/master/LICENSE)
 
