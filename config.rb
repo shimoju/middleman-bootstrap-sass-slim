@@ -54,7 +54,7 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 
 # Slim configuration
-Slim::Engine.set_default_options pretty: true, sort_attrs: false
+Slim::Engine.set_options pretty: true, sort_attrs: false
 
 # development configuration
 configure :development do
@@ -70,7 +70,7 @@ configure :build do
   end
 
   # Minify on build
-  Slim::Engine.set_default_options pretty: false, sort_attrs: true
+  Slim::Engine.set_options pretty: false, sort_attrs: true
   activate :minify_css
   activate :minify_javascript
 
