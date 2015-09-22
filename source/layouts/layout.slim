@@ -14,13 +14,13 @@ html lang="en"
     nav.navbar.navbar-inverse.navbar-static-top role="navigation"
       .container
         .navbar-header
-          button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-collapse"
+          button.navbar-toggle.collapsed type="button" data-target="#navbar" data-toggle="collapse" aria-controls="navbar" aria-expanded="false"
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
           = link_to "Middleman", ".", class: "navbar-brand"
-        .collapse.navbar-collapse
+        #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
             li.active= link_to "Home", "#"
             li= link_to "About", "#about"
